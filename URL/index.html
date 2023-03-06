@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch Utilities URL</title>
     <script>
-      let inp = document.getElementById("inp");
-      function go() {
+      let inp0 = document.getElementById("inp0");
+      function go(a) {
         //let a = inp.value;
-        window.location.href = "http://" + document.getElementById("inp").value;
+        if (a) {
+          window.location.href = "//" + document.getElementById("inp0").value;
+        } else {
+          window.location.href = "http://" + document.getElementById("inp0").value;
+        }
       }
     </script>
   </head>
   <body style="background: #202020;">
-    <input type="text" id="inp">
-    <button id="btn" onclick="go();">Go</button>
+    <input type="text" id="inp0" style="position: absolute; top:30%; left:30%;">
+    <button id="btn0" onclick="go(false);" style="position: absolute; top:30%; right:20%;">Go</button>
+    <button id="btn1" onclick="go(true);" style="position: absolute; bottom:30%; right:20%;">Go Raw</button>
   </body>
 </html>
