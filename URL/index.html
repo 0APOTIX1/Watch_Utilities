@@ -16,10 +16,43 @@
         }
       }
     </script>
+    <style>
+      body {
+        background: #202020;
+        padding: 0px;
+        margin: 0px;
+      }
+      text {
+        font-family: arial;
+      }
+      .inp {
+        position: absolute; 
+        top:30%;
+        left:0px;
+        background: #353535;
+        padding: 5% 10%
+      }
+      .btn0 {
+        position: absolute; 
+        top:0px; 
+        right:0px;
+        background: #2ba6ee;
+        padding: 10% 10%;
+        font-size: 50px;
+      }
+      .btn1 {
+        position: absolute; 
+        bottom:0px; 
+        right:0px;
+        background: #2ba6ee;
+        padding: 10% 10%;
+        font-size: 50px;
+      }
+    </style>
   </head>
-  <body style="background: #202020;">
-    <input type="text" id="inp0" style="position: absolute; top:30%; left:30%;">
-    <button id="btn0" onclick="go(false);" style="position: absolute; top:30%; right:20%;">Go</button>
-    <button id="btn1" onclick="go(true);" style="position: absolute; bottom:30%; right:20%;">Go Raw</button>
+  <body>
+    <input type="text" id="inp0" class="inp">
+    <text id="btn0" onclick="go(false);" class="btn0">Go</text>
+    <text id="btn1" onclick="go(true);" class="btn1">Go Raw</text>
   </body>
 </html>
