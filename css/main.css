@@ -1,0 +1,21 @@
+body {
+	background-color: #222;
+	margin: 0px;
+	padding: 0px;
+}
+text {
+	color: #fff;
+	font-family: arial;
+}
+a {
+	color: #fff;
+	font-family: arial;
+}
+
+.wrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
